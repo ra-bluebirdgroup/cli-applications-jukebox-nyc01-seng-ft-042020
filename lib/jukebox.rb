@@ -15,7 +15,7 @@ def play(songs)
 puts "Please enter a song name or number:"
 input = gets.chomp
 
-songs.each_index.select{|i|
+songs.each_index{|i|
     if input.to_i == (i-1) || input == songs[i]
       puts "#{songs[i]}" #{(i+1)}.
     else
@@ -23,5 +23,5 @@ songs.each_index.select{|i|
     end
 
     }
- 
+
 end
