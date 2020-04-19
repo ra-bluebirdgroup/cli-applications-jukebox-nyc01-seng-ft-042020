@@ -20,7 +20,7 @@ songs.each_index.select{|i|
       puts "#{songs[i]}" #{(i+1)}.
     else
       puts "Invalid input, please try again"
-      yield
+      break 
     end
 
     }
