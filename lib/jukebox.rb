@@ -25,3 +25,6 @@ songs.each_index{|i|
     }
 
 end
+
+def exit_jukebox
+  puts "Goodbye"
