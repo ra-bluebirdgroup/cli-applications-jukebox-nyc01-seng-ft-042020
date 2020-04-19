@@ -13,9 +13,9 @@ end
 
 def play(songs)
 puts "Please enter a song name or number:"
-input = gets.chomp
+input = gets.strip
 
-songs.each_index{|i|
+songs.each_index.select{|i|
     if input.to_i == (i-1) || input == songs[i]
       puts "#{songs[i]}" #{(i+1)}.
     else
@@ -28,4 +28,4 @@ end
 
 def exit_jukebox
   puts "Goodbye"
-end 
+end
